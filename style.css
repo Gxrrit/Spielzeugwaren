@@ -1,0 +1,404 @@
+body {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    height: 65px;
+    background-color: #4db8ff;
+}
+
+input {
+    height: 35px;
+    width: 400px;
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    padding-left: 14px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1em;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 10px;
+}
+
+input::placeholder {
+    font-weight: bold;
+    color: gray;
+}
+
+input:focus,
+input:valid{
+    width: 490px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 100px;
+    padding-top: 13px;
+    padding-left: 550px;
+}
+
+.header button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #1f4966;
+    color: #fff;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.header button:hover {
+    background-color: #3b6b8d;
+}
+
+.login button {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+    font-size: 1.2em;
+    font-family: myFont;
+    font-weight: lighter;
+    background-color: #c25048;
+    color: #ffb83d;
+    transition: 0.3s ease;
+}
+
+.login button:hover {
+    color: #fff;
+    text-shadow: 0 0 10px;
+}
+
+.header-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(.6);
+}
+
+.headline {
+    font-family: "myFont";
+    font-size: 3.5em;
+    position: absolute;
+    left: 24%;
+    top: 65px;
+    background: linear-gradient(to right,rgb(255, 215, 120), rgb(212, 175, 55), rgb(169, 133, 39));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(Baloon.ttf);
+}
+
+.image-area {
+    position: absolute;
+    top: 500px;
+    left: 7.5%;
+    width: 85%;
+    height: 1000px;
+    background: linear-gradient(to right, rgb(86, 210, 255), rgb(36, 98, 121));
+    border-radius: 20px;
+    box-shadow: 0 0 20px 5px;
+}
+
+.image-area h1 {
+    font-family: myFont;
+    font-weight: lighter;
+    color: #fff;
+    text-align: center;
+    font-size: 5em;
+    text-shadow: 0 0 6px;
+}
+
+.puppen {
+    width: 350px;
+    height: auto;
+    position: absolute;
+    top: 275px;
+    left: 20px;
+    border-radius: 10px;
+}
+
+.bilder-1 h2 {
+    font-family: myFont;
+    color: #ffb83d;
+    font-weight: lighter;
+    position: absolute;
+    left: 209px;
+    top: 180px;
+    font-size: 2em;
+}
+
+.figuren {
+    width: 310px;
+    height: auto;
+    position: absolute;
+    top: 275px;
+    left: 390px;
+    border-radius: 10px;
+}
+
+.auto {
+    width: 312px;
+    height: auto;
+    position: absolute;
+    top: 275px;
+    right: 390px;
+    border-radius: 10px;
+}
+
+.bilder-2 h2 {
+    font-family: myFont;
+    color: #ffb83d;
+    font-weight: lighter;
+    position: absolute;
+    right: 209px;
+    top: 180px;
+    font-size: 2em;
+}
+
+.zug {
+    width: 338px;
+    height: auto;
+    position: absolute;
+    top: 275px;
+    right: 20px;
+    border-radius: 10px;
+}
+
+.bauen {
+    width: 350px;
+    height: auto;
+    position: absolute;
+    top: 650px;
+    left: 20px;
+    border-radius: 10px;
+}
+
+.kreativ {
+    width: 310px;
+    height: 198px;
+    object-fit: cover;
+    position: absolute;
+    top: 650px;
+    left: 390px;
+    border-radius: 10px;
+}
+
+.bilder-3 h2 {
+    font-family: myFont;
+    color: #ffb83d;
+    font-weight: lighter;
+    position: absolute;
+    left: 158px;
+    top: 550px;
+    font-size: 2em;
+}
+
+.lego {
+    width: 317px;
+    height: 200px;
+    object-fit: cover;
+    position: absolute;
+    top: 650px;
+    right: 385px;
+    border-radius: 10px;
+}
+
+.playmobil {
+    width: 335px;
+    height: 200px;
+    object-fit: cover;
+    position: absolute;
+    top: 650px;
+    right: 20px;
+    border-radius: 10px;
+}
+
+.bilder-4 h2 {
+    font-family: myFont;
+    color: #ffb83d;
+    font-weight: lighter;
+    position: absolute;
+    right: 200px;
+    top: 550px;
+    font-size: 2em;
+}
+
+.weihnachtscontainer h1 {
+    font-family: myFont;
+    font-size: 4em;
+    color: #c25048;
+    position: absolute;
+    bottom: -900px;
+    left: 438px;
+}
+
+.rabatt {
+    font-family: myFont;
+    font-weight: lighter;
+    position: absolute;
+    bottom: -1000px;
+    left: 80px;
+    font-size: 2em;
+    color: #ffb83d;
+}
+
+.limitiert {
+    font-family: myFont;
+    font-weight: lighter;
+    position: absolute;
+    bottom: -1000px;
+    left: 660px;
+    font-size: 2em;
+    color: #ffb83d;
+}
+
+.geschenk {
+    font-family: myFont;
+    font-weight: lighter;
+    position: absolute;
+    bottom: -1000px;
+    right: 80px;
+    font-size: 2em;
+    color: #ffb83d;
+}
+
+.sale-img {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    bottom: -1300px;
+    left: 70px;
+    border-radius: 20px;
+}
+
+.arrow-1 {
+    width: 30px;
+    height: auto;
+    position: absolute;
+    bottom: -1350px;
+    left: 85px;
+    background-color: #c25048;
+    padding: 5px 120px 5px 120px;
+    border-radius: 10px 10px 0px 0px;
+    transition: all 0.3s ease;
+}
+
+.arrow-1:hover {
+    padding-bottom: 310px;
+    position: absolute;
+    bottom: -1655px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* Oben ist Animation für sale */
+
+.text-1 {
+    font-family: myFont;
+    color: #fff;
+    font-weight: lighter;
+    position: absolute;
+    bottom: -1650px;
+    left: 94px;
+    text-align: center;
+    width: 250px;
+}
+
+.limited-img {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    bottom: -1300px;
+    left: 684px;
+    border-radius: 20px;
+}
+
+.arrow-2 {
+    width: 30px;
+    height: auto;
+    position: absolute;
+    bottom: -1350px;
+    left: 700px;
+    background-color: #c25048;
+    padding: 5px 120px 5px 120px;
+    border-radius: 10px 10px 0px 0px;
+    transition: all 0.3s ease;
+}
+
+.arrow-2:hover {
+    padding-bottom: 310px;
+    position: absolute;
+    bottom: -1655px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* Oben ist Animation für exklusiv */
+
+.text-2 {
+    font-family: myFont;
+    color: #fff;
+    font-weight: lighter;
+    position: absolute;
+    bottom: -1650px;
+    left: 705px;
+    text-align: center;
+    width: 260px;
+}
+
+.geschenk-img {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    bottom: -1300px;
+    right: 72px;
+    border-radius: 20px;
+}
+
+.arrow-3 {
+    width: 30px;
+    height: auto;
+    position: absolute;
+    bottom: -1350px;
+    right: 85px;
+    background-color: #c25048;
+    padding: 5px 120px 5px 120px;
+    border-radius: 10px 10px 0px 0px;
+    transition: all 0.3s ease;
+}
+
+.arrow-3:hover {
+    padding-bottom: 310px;
+    position: absolute;
+    bottom: -1655px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* Oben ist Animation für Geschenkpaket */
+
+.text-3 {
+    font-family: myFont;
+    color: #fff;
+    font-weight: lighter;
+    position: absolute;
+    bottom: -1650px;
+    right: 94px;
+    text-align: center;
+    width: 250px;
+}
